@@ -31,7 +31,7 @@ function App() {
       <button onClick={reverseOrder}>Reverse</button>
       <table>
         <tbody>
-          <ToDO key={todo.id} task={todo.task} createdAt={todo.createdAt} />
+          <ToDo key={todos.id} task={todos.task} createdAt={todos.createdAt} />
         </tbody>
       </table>
     </div>
