@@ -20,10 +20,10 @@ function ToDo({id,task,createdAt}) {
 
 function App() {
   const [todos, setTodos] = useState([{
-    id: 'todo1',task:'Task 1'
+    id: 'todo1',
     createdAt: '20:30',
   }, {
-    id: 'todo2',task:'Task 2'
+    id: 'todo2',
     createdAt: '18:00',
   }
   ]);
