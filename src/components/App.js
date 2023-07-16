@@ -20,11 +20,11 @@ function ToDo({id,task,createdAt}) {
 
 function App() {
   const [todos, setTodos] = useState([
-    { id: 'todo1',task:'Task 1',createdAt: '18:10' },
-    { id: 'todo2',task:'Task 2',createdAt: '22:10' },
+    { id: 'todo1',createdAt: '18:10', },
+    { id: 'todo2',createdAt: '22:10', },
     ]);
   const reverseOrder=()=>{
-    setTodos(prevTodos =>[...prevTodos].revers());
+    setTodos(prevTodos =>[...prevTodos].reverse());
   };
   return (
     <div id="main">
