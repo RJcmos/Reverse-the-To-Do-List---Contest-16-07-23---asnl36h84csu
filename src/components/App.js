@@ -8,8 +8,8 @@ function ToDo({id,task,createdAt}) {
         {id}
     </td>
     <td>
-      <input />
-      {task}
+      <input value={task}/>
+      
     </td>
     <td>
       <p>createdAt</p>
@@ -20,10 +20,10 @@ function ToDo({id,task,createdAt}) {
 
 function App() {
   const [todos, setTodos] = useState([{
-    id: 'todo1',
+    id: 'todo1',task:'Task 1'
     createdAt: '20:30',
   }, {
-    id: 'todo2',
+    id: 'todo2',task:'Task 2'
     createdAt: '18:00',
   }
   ]);
@@ -35,7 +35,7 @@ function App() {
       <button onClick={reverseOrder}>Reverse</button>
       <table>
         <tbody>
-          <ToDo key={todos.id} task={todos.task} createdAt={todos.createdAt} />
+          <ToDo key={id} task={task} createdAt={createdAt} />
         </tbody>
       </table>
     </div>
